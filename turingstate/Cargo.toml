@@ -1,0 +1,19 @@
+[package]
+name = "turingstate"
+version = "0.1.0"
+edition = "2021"
+description = "Professional editor and simulator for finite automata and Turing machines, designed for both educational and research purposes."
+license = "MIT"
+authors = ["Elouan Lahougue <contact.elouanlahougue@gmail.com>"]
+
+[[bin]]
+name = "turingstate"
+path = "src/main.rs"
+
+[dependencies]
+slint = { workspace = true }
+turingstate-core = { path = "../turingstate-core" }
+slint-build = { workspace = true }
+
+[build-dependencies]
+slint-build = { workspace = true }

@@ -1,12 +1,15 @@
 export component MainWindow inherits Window {
-    preferred-width: 1080px;
-    preferred-height: 720px;
+    // preferred-width: 1080px;
+    // preferred-height: 720px;
+    full-screen: true;
     title: "TuringState - Automate & Turing Machine Editor and Simulator";
     background: @linear-gradient(180deg, #1e1f2e 0%, #111222 100%);
     Text {
-        text: "Hello wo\\TuringState.\n(Rust + Slint)";
+        text: "Hello wo..\\TuringState.\n(Rust + Slint)";
         color: white;
-        font-size: 24px;
+        font-size: 12.5px;
+        font-family: "Segoe UI Variable";
+        font-weight: 500;
         horizontal-alignment: center;
         vertical-alignment: center;
     }

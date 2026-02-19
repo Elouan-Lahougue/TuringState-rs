@@ -1,0 +1,16 @@
+[package]
+name = "turingstate-core"
+version = "0.1.0"
+edition = "2021"
+description = "Core library for TuringState, providing essential functionalities and utilities."
+license = "MIT"
+authors = ["Elouan Lahougue <contact.elouanlahougue@gmail.com>"]
+
+[lib]
+name = "turingstate_core"
+path = "src/lib.rs"
+
+[dependencies]
+serde = { workspace = true }
+ron = { workspace = true }
+uuid = { workspace = true }

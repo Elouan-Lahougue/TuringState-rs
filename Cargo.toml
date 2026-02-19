@@ -1,10 +1,18 @@
-[package]
-name = "TuringState"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+resolver = "2"
+members = ["turingstate", "turingstate-core"]
 
-[dependencies]
+[workspace.dependencies]
 slint = "1.15.1"
-
-[build-dependencies]
 slint-build = "1.15.1"
+ron = "0.12"
+serde = { version = "1", features = ["derive"] }
+uuid = { version = "1.12.0", features = ["v4"] }
+
+[workspace.package]
+authors = ["Elouan Lahougue <contact.elouanlahougue@gmail.com>"]
+name = "TuringState-rs"
+version = "0.1.0"
+license = "MIT"
+edition = "2021"
+repository = "https://github.com/Elouan-Lahougue/TuringState-rs.git"
